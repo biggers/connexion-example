@@ -4,9 +4,11 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-connexion = "*"
+connexion = {extras = ["swagger-ui"]}
+logzero = "*"
 gevent = "*"
-greenlet = {version = "*", platform_python_implementation="=='CPython'"}
+greenlet = {version = "*",platform_python_implementation = "=='CPython'"}
+swagger-ui-bundle = "*"
 
 [dev-packages]
 
