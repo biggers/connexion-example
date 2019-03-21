@@ -16,7 +16,8 @@ Addenda - More to Do
 
 Installing pipenv
 -----------------
-::
+To install ``pipenv`` into the virtual-env: ::
+
    which python3.6
 
    ... /usr/bin/python3.6
@@ -29,8 +30,8 @@ Installing pipenv
    pip3 install --user pipenv
    
 
-Installing connexion-example
-----------------------------
+*Really* installing this example
+--------------------------------
 First, "clone the example" code: ::
   
   git clone https://git.com/project.git
