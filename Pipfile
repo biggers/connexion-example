@@ -9,6 +9,7 @@ logzero = "*"
 gevent = "*"
 greenlet = {version = "*",platform_python_implementation = "=='CPython'"}
 swagger-ui-bundle = "*"
+httpie = "*"
 
 [dev-packages]
 

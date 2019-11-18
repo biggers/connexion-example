@@ -11,8 +11,8 @@ You can build the example application as a Docker image and run it:
   ./test.sh  # do some test HTTP requests
 
 
-Addenda - More to Do
-====================
+Addenda
+=======
 
 Installing pipenv
 -----------------
@@ -44,12 +44,12 @@ Must install PR #11 from ``connexion-example`` app!  See https://github.com/hjac
   cd connexion-example
   cp -pav ~/Downloads/Pipfile* .
 
-  export LOCPY=$HOME/.local/bin
+  # use 'virtualenvwrapper' for this project
+  workon connexion-example[TAB]  # to find the virtualenv!
 
-  ${LOCPY}/pipenv install --dev && pipenv shell
-  workon connextion-example[TAB]  # to find the virtualenv!
-
-  # pip3 install swagger_ui_bundle
+  pip install pipenv
+  
+  pipenv install --dev
 
   ./app.py  # start the HTTP server
 
@@ -57,7 +57,7 @@ Must install PR #11 from ``connexion-example`` app!  See https://github.com/hjac
   # ... to point to Firefox browser - in my case
   xdg-open http://localhost:8080/ui/
 
-  # do some test HTTP-requests with 'http'
-  pip install httpie
+  # do some test API-requests with 'httpie'
+  pipenv install httpie
 
   ./test.sh
